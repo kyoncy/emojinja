@@ -1,5 +1,7 @@
 import React from 'react';
+import CopyToClipboard from 'react-copy-to-clipboard';
 import { Card } from 'semantic-ui-react';
+
 
 interface CardEmojiProps {
   emoji?: string;
@@ -12,32 +14,36 @@ const CardEmoji = ({
   backgroundColor = '#ffffff',
   name = 'none',
 }: CardEmojiProps) => (
-  <Card
-    id={name}
-    href={`#${name}`}
+  <CopyToClipboard
+    text={`:${name}:`}
   >
-    <div style={{
-      backgroundColor: backgroundColor,
-      textAlign: 'center',
-      fontSize: '100px',
-      height: '200px',
-      position: 'relative',
-    }}>
-      <p style={{
-        position: 'absolute',
-        top: '50%', left: '50%',
-        transform: 'translateY(-50%) translateX(-50%)',
-        WebkitTransform: 'translateY(-50%) translateX(-50%)',
+    <Card
+      id={name}
+      href={`#${name}`}
+    >
+      <div style={{
+        backgroundColor: backgroundColor,
+        textAlign: 'center',
+        fontSize: '100px',
+        height: '200px',
+        position: 'relative',
       }}>
-        {emoji}
-      </p>
-    </div>
-    <Card.Content>
-      <Card.Header style={{ textAlign: 'center' }}>
-        {`:${name}:`}
-      </Card.Header>
-    </Card.Content>
-  </Card>
+        <p style={{
+          position: 'absolute',
+          top: '50%', left: '50%',
+          transform: 'translateY(-50%) translateX(-50%)',
+          WebkitTransform: 'translateY(-50%) translateX(-50%)',
+        }}>
+          {emoji}
+        </p>
+      </div>
+      <Card.Content>
+        <Card.Header style={{ textAlign: 'center' }}>
+          {`:${name}:`}
+        </Card.Header>
+      </Card.Content>
+    </Card>
+  </CopyToClipboard>
 );
 
 export default CardEmoji;
