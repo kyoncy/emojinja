@@ -20,6 +20,9 @@ const CardEmoji = ({
     <Card
       id={name}
       href={`#${name}`}
+      style={{
+        margin: '20px'
+      }}
     >
       <div style={{
         backgroundColor: backgroundColor,

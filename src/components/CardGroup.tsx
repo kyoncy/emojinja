@@ -4,7 +4,7 @@ import CardEmoji from './CardEmoji';
 import EmojiList from '../datas/EmojiList';
 
 const CardGroup = () => (
-  <Card.Group centered itemsPerRow={4}>
+  <Card.Group centered>
     {EmojiList.map((emoji, index) => (
       <CardEmoji
         key={index}
