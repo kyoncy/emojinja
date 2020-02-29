@@ -1,9 +1,12 @@
 import React from 'react';
-import { Sample } from './components/Sample'
+import { Container } from 'semantic-ui-react'
+import CardGroup from './components/CardGroup'
 
-function App() {
+const App = () => {
   return (
-    <Sample />
+    <Container style={{ paddingTop: '2rem' }}>
+      <CardGroup />
+    </Container>
   );
 }
 
