@@ -3,7 +3,7 @@ name: firebase hosting deploy
 on:
   push:
     branches:
-    - feature/deploy_firebase
+    - master
 
 jobs:
   build:
