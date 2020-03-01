@@ -26,6 +26,31 @@ const EmojiList: IEmojiList[] = [
     backgroundColor: '#9affa1',
     name: 'recycle',
     description: 'コードのリファクタ',
+  }, {
+    emoji: '🔧',
+    backgroundColor: '#dcdcdc',
+    name: 'wrench',
+    description: '設定ファイルの変更',
+  }, {
+    emoji: '✏️',
+    backgroundColor: '#fcba03',
+    name: 'pencil2',
+    description: 'タイポの修正',
+  }, {
+    emoji: '🐛',
+    backgroundColor: '#1dbf35',
+    name: 'bug',
+    description: 'バグの修正',
+  }, {
+    emoji: '💚',
+    backgroundColor: '#47ff63',
+    name: 'green_heart',
+    description: 'CIの修正',
+  }, {
+    emoji: '✨',
+    backgroundColor: '#ffce47',
+    name: 'sparkles',
+    description: '新機能の追加',
   },
 ];
 
