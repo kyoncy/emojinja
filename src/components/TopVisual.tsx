@@ -1,5 +1,6 @@
 import React from 'react';
 import { Header } from 'semantic-ui-react'
+import Translation from './Translation';
 
 const TopVisual = () => (
   <div style={{ padding: '20px' }}>
@@ -9,6 +10,7 @@ const TopVisual = () => (
       userSelect: 'none',
     }}>
       Emojinja
+      <Translation />
     </Header>
   </div>
 );
