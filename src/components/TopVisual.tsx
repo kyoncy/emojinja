@@ -6,6 +6,7 @@ const TopVisual = () => (
     <Header as='h1' style={{
       textAlign: 'center',
       fontSize: '70px',
+      userSelect: 'none',
     }}>
       Emojinja
     </Header>
