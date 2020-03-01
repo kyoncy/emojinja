@@ -1,5 +1,21 @@
 {
+  "includePaths": [
+    "package.json"
+  ],
   "extends": [
     "config:base"
+  ],
+  "timezone": "Asia/Tokyo",
+  "minor": {
+    "groupName": "all dependencies",
+    "schedule": ["before 10am on monday"],
+    "automerge": false
+  },
+  "packageRules": [
+    {
+      "updateTypes": ["major"],
+      "schedule": ["before 9am on the first day of the month"],
+      "masterIssueApproval": true
+    }
   ]
 }
