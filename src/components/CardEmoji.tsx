@@ -1,6 +1,6 @@
 import React from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
-import { Card } from 'semantic-ui-react';
+import { Card, Popup } from 'semantic-ui-react';
 import EmojiArea from './EmojiArea';
 
 interface CardEmojiProps {
@@ -19,23 +19,23 @@ const CardEmoji = ({
   <CopyToClipboard
     text={`:${name}:`}
   >
-    <Card
-      id={name}
-      href={`#${name}`}
-      style={{
-        margin: '20px'
-      }}
-    >
-      <EmojiArea emoji={emoji} backgroundColor={backgroundColor} />
-      <Card.Content>
-        <Card.Header style={{ textAlign: 'center' }}>
-          {`:${name}:`}
-        </Card.Header>
-        <Card.Description style={{ textAlign: 'center' }}>
-          {description}
-        </Card.Description>
-      </Card.Content>
-    </Card>
+    <Popup
+      content={<p style={{ fontWeight: 'bold', userSelect: 'none' }}>Copy text :{name}:</p>}
+      on='click' size='large'
+      trigger={
+        <Card id={name} style={{ margin: '20px' }} >
+          <EmojiArea emoji={emoji} backgroundColor={backgroundColor} />
+          <Card.Content>
+            <Card.Header style={{ textAlign: 'center' }}>
+              {`:${name}:`}
+            </Card.Header>
+            <Card.Description style={{ textAlign: 'center' }}>
+              {description}
+            </Card.Description>
+          </Card.Content>
+        </Card>
+      }
+    />
   </CopyToClipboard>
 );
 
