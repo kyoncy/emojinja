@@ -42,7 +42,6 @@ const CardEmoji = ({
 
   return (
     <Popup
-      content={<p style={{ fontWeight: 'bold', userSelect: 'none' }}>Copy text :{name}:</p>}
       on={['hover', 'click']} size='large' flowing hoverable
       trigger={
         <Card id={name} style={{ margin: '20px' }} >
