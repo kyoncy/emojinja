@@ -5,10 +5,11 @@ import EmojiList from '../datas/EmojiList';
 
 const CardGroup = () => (
   <Card.Group centered>
-    {EmojiList.map((emoji, index) => (
+    {Object.entries(EmojiList).map(([key, value]) => (
       <CardEmoji
-        key={index}
-        {...emoji}
+        key={key}
+        name={key}
+        {...value}
       />
     ))}
   </Card.Group>
