@@ -1,47 +1,47 @@
 interface IEmojiList {
-  emoji: string;
-  backgroundColor: string;
-  name: string;
+  [name: string]: {
+    emoji: string;
+    backgroundColor: string;
+  }
 };
 
-const EmojiList: IEmojiList[] = [
-  {
+const EmojiList: IEmojiList = {
+  white_check_mark: {
     emoji: '✅',
     backgroundColor: '#caf7c1',
-    name: 'white_check_mark',
-  }, {
+  },
+  fire: {
     emoji: '🔥',
     backgroundColor: '#ff7777',
-    name: 'fire',
-  }, {
+  },
+  package: {
     emoji: '📦',
     backgroundColor: '#f7e4c1',
-    name: 'package',
-  }, {
+  },
+  recycle: {
     emoji: '♻️',
     backgroundColor: '#9affa1',
-    name: 'recycle',
-  }, {
+  },
+  wrench: {
     emoji: '🔧',
     backgroundColor: '#dcdcdc',
-    name: 'wrench',
-  }, {
+  },
+  pencil2: {
     emoji: '✏️',
     backgroundColor: '#fcba03',
-    name: 'pencil2',
-  }, {
+  },
+  bug: {
     emoji: '🐛',
     backgroundColor: '#1dbf35',
-    name: 'bug',
-  }, {
+  },
+  green_heart: {
     emoji: '💚',
     backgroundColor: '#47ff63',
-    name: 'green_heart',
-  }, {
+  },
+  sparkles: {
     emoji: '✨',
     backgroundColor: '#ffce47',
-    name: 'sparkles',
   },
-];
+};
 
 export default EmojiList;

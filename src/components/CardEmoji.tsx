@@ -1,11 +1,11 @@
 import React from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
 import { Card, Popup, Grid, Button, Header } from 'semantic-ui-react';
-import { useTranslation } from 'react-i18next';
 import { toast } from 'react-toastify';
 import { css } from 'glamor'
 import 'react-toastify/dist/ReactToastify.css';
 import EmojiArea from './EmojiArea';
+import EmojiDescription from './EmojiDescription';
 
 interface CardEmojiProps {
   emoji?: string;
@@ -27,7 +27,6 @@ const CardEmoji = ({
   backgroundColor = '#ffffff',
   name = 'none',
 }: CardEmojiProps) => {
-  const [t] = useTranslation();
   const notify = (text: string, backgroundColor: string) => toast(`Copy ${text}`, {
     className: css({
       fontWeight: 'bold',
@@ -50,9 +49,7 @@ const CardEmoji = ({
             <Card.Header style={{ textAlign: 'center' }}>
               {`:${name}:`}
             </Card.Header>
-            <Card.Description style={{ textAlign: 'center' }}>
-              {`${t(name)}`}
-            </Card.Description>
+            <EmojiDescription name={name} />
           </Card.Content>
         </Card>
       }
