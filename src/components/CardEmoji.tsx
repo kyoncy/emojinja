@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-wrap-multilines, react/jsx-curly-newline */
 import React from "react";
 import CopyToClipboard from "react-copy-to-clipboard";
 import { Card, Popup, Grid, Button, Header } from "semantic-ui-react";
@@ -27,6 +28,7 @@ const CardEmoji = ({
   backgroundColor = "#ffffff",
   name = "none"
 }: CardEmojiProps): JSX.Element => {
+  // eslint-disable-next-line no-shadow
   const notify = (text: string, backgroundColor: string): React.ReactText =>
     toast(`Copy ${text}`, {
       className: css({

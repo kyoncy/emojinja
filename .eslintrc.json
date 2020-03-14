@@ -1,5 +1,6 @@
 {
   "extends": [
+    "airbnb",
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
@@ -18,5 +19,14 @@
   },
   "parserOptions": {
     "sourceType": "module"
+  },
+  "rules": {
+    "react/jsx-filename-extension": [
+      "error", {
+        "extensions": [".jsx", ".tsx"]
+      }
+    ],
+    "import/extensions": "off",
+    "import/no-unresolved": "off"
   }
 }
