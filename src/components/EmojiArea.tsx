@@ -11,7 +11,7 @@ const EmojiArea = ({
 }: CardEmojiProps): JSX.Element => (
   <div
     style={{
-      backgroundColor: backgroundColor,
+      backgroundColor,
       textAlign: "center",
       fontSize: "100px",
       height: "200px",
