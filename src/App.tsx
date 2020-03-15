@@ -5,7 +5,7 @@ import CardGroup from "./components/CardGroup";
 
 const App = (): JSX.Element => {
   return (
-    <Container style={{ paddingTop: "2rem" }}>
+    <Container fluid style={{ paddingTop: "2rem" }}>
       <TopVisual />
       <CardGroup />
     </Container>
