@@ -43,6 +43,42 @@ const EmojiList: EmojiList = {
   sparkles: {
     emoji: "✨",
     backgroundColor: "#ffce47"
+  },
+  lipstick: {
+    emoji: "💄",
+    backgroundColor: "#f5427e"
+  },
+  whale: {
+    emoji: "🐳",
+    backgroundColor: "#94fffa"
+  },
+  wheelchair: {
+    emoji: "♿️",
+    backgroundColor: "#56cef0"
+  },
+  see_no_evil: {
+    emoji: "🙈",
+    backgroundColor: "#de893a"
+  },
+  ambulance: {
+    emoji: "🚑",
+    backgroundColor: "#ffe3e8"
+  },
+  zap: {
+    emoji: "⚡️",
+    backgroundColor: "#ffe342"
+  },
+  globe_with_meridians: {
+    emoji: "🌐",
+    backgroundColor: "#e7f4ff"
+  },
+  construction: {
+    emoji: "🚧",
+    backgroundColor: "#ffe342"
+  },
+  label: {
+    emoji: "🏷",
+    backgroundColor: "#fff8ed"
   }
 };
 

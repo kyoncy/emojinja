@@ -13,6 +13,8 @@ const TopVisual = (): JSX.Element => (
       }}
     >
       Emojinja
+      {` `}
+      <span style={{ fontSize: "30px" }}>for Github</span>
       <Translation />
     </Header>
   </div>

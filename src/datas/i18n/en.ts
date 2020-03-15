@@ -9,7 +9,16 @@ const en = {
   pencil2: "Fixing typos",
   bug: "Fixing a bug",
   green_heart: "Fixing CI Build",
-  sparkles: "Introducing new features"
+  sparkles: "Introducing new features",
+  lipstick: "Updating the UI and style files",
+  whale: "Work about Docker",
+  wheelchair: "Improving accessibility",
+  see_no_evil: "Adding or updating a .gitignore file",
+  ambulance: "Critical hotfix",
+  zap: "Improving performance",
+  globe_with_meridians: "Internationalization and localization",
+  construction: "Work In Progress",
+  label: "Adding or updating types (TypeScript)"
 };
 
 export default en;
