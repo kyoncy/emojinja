@@ -77,7 +77,7 @@ const CardEmoji = ({
             <Button
               onClick={(): React.ReactText => notify(emoji, backgroundColor)}
             >
-              Direct Copy
+              Copy Directly
             </Button>
           </CopyToClipboard>
         </Grid.Column>
@@ -89,7 +89,7 @@ const CardEmoji = ({
                 notify(`:${name}:`, backgroundColor)
               }
             >
-              Alias Copy
+              Copy Alias
             </Button>
           </CopyToClipboard>
         </Grid.Column>
