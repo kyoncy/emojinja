@@ -13,6 +13,16 @@ const Footer = (): JSX.Element => (
         <Icon name="twitter" style={{ color: "#1da1f2" }} />
         @kyoncy_site
       </a>
+      {` `}
+      <a
+        href="https://github.com/nagaokyota/emojinja"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ textDecoration: "none" }}
+      >
+        <Icon name="github" style={{ color: "#000000" }} />
+        emojinja
+      </a>
     </p>
   </div>
 );
