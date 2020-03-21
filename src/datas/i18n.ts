@@ -5,7 +5,7 @@ import jaTranslation from "./i18n/ja";
 
 const resources = {
   en: { translation: enTranslation },
-  ja: { translation: jaTranslation }
+  ja: { translation: jaTranslation },
 };
 
 i18n.use(initReactI18next).init({
@@ -13,7 +13,7 @@ i18n.use(initReactI18next).init({
   fallbackLng: "ja",
   interpolation: { escapeValue: false },
   react: { wait: true },
-  resources
+  resources,
 });
 
 export default i18n;

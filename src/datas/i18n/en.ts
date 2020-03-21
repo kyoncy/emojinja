@@ -18,7 +18,7 @@ const en = {
   zap: "Improving performance",
   globe_with_meridians: "Internationalization and localization",
   construction: "Work In Progress",
-  label: "Adding or updating types (TypeScript)"
+  label: "Adding or updating types (TypeScript)",
 };
 
 export default en;

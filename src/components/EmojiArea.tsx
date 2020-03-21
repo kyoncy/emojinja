@@ -7,7 +7,7 @@ interface CardEmojiProps {
 
 const EmojiArea = ({
   emoji = "❌",
-  backgroundColor = "#ffffff"
+  backgroundColor = "#ffffff",
 }: CardEmojiProps): JSX.Element => (
   <div
     style={{
@@ -15,7 +15,7 @@ const EmojiArea = ({
       textAlign: "center",
       fontSize: "100px",
       height: "200px",
-      position: "relative"
+      position: "relative",
     }}
   >
     <p
@@ -26,7 +26,7 @@ const EmojiArea = ({
         transform: "translateY(-50%) translateX(-50%)",
         WebkitTransform: "translateY(-50%) translateX(-50%)",
         fontFamily:
-          "Apple Color Emoji,Segoe UI Emoji,Noto Color Emoji,Segoe UI Symbol,Android Emoji,EmojiSymbols"
+          "Apple Color Emoji,Segoe UI Emoji,Noto Color Emoji,Segoe UI Symbol,Android Emoji,EmojiSymbols",
       }}
     >
       {emoji}

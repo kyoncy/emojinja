@@ -18,7 +18,7 @@ const ja = {
   zap: "パフォーマンス改善",
   globe_with_meridians: "多言語対応",
   construction: "WIP(Work In Progress)",
-  label: "型の追加・修正"
+  label: "型の追加・修正",
 };
 
 export default ja;

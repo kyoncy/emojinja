@@ -20,13 +20,13 @@ toast.configure({
   hideProgressBar: true,
   closeOnClick: true,
   pauseOnHover: true,
-  draggable: false
+  draggable: false,
 });
 
 const CardEmoji = ({
   emoji = "❌",
   backgroundColor = "#ffffff",
-  name = "none"
+  name = "none",
 }: CardEmojiProps): JSX.Element => {
   // eslint-disable-next-line no-shadow
   const notify = (text: string, backgroundColor: string): React.ReactText =>
@@ -34,13 +34,13 @@ const CardEmoji = ({
       className: css({
         fontWeight: "bold",
         backgroundColor: `${backgroundColor} !important`,
-        color: "rgba(0,0,0,.87) !important"
+        color: "rgba(0,0,0,.87) !important",
       }),
       bodyClassName: css({
         fontSize: "18px",
         fontFamily:
-          "Apple Color Emoji,Segoe UI Emoji,Noto Color Emoji,Segoe UI Symbol,Android Emoji,EmojiSymbols"
-      })
+          "Apple Color Emoji,Segoe UI Emoji,Noto Color Emoji,Segoe UI Symbol,Android Emoji,EmojiSymbols",
+      }),
     });
 
   return (
@@ -68,7 +68,7 @@ const CardEmoji = ({
             style={{
               userSelect: "none",
               fontFamily:
-                "Apple Color Emoji,Segoe UI Emoji,Noto Color Emoji,Segoe UI Symbol,Android Emoji,EmojiSymbols"
+                "Apple Color Emoji,Segoe UI Emoji,Noto Color Emoji,Segoe UI Symbol,Android Emoji,EmojiSymbols",
             }}
           >
             {emoji}

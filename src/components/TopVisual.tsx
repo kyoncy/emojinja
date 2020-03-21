@@ -5,6 +5,7 @@ import { Header } from "semantic-ui-react";
 import Translation from "./Translation";
 
 const TopVisual = (): JSX.Element => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   let typed: any = useRef();
 
   return (
@@ -13,13 +14,13 @@ const TopVisual = (): JSX.Element => {
         as="h1"
         style={{
           textAlign: "center",
-          userSelect: "none"
+          userSelect: "none",
         }}
       >
         <div
           style={{
             fontSize: "40px",
-            marginBottom: "20px"
+            marginBottom: "20px",
           }}
           role="button"
           onClick={(): void => {
