@@ -28,7 +28,7 @@ const TopVisual = (): JSX.Element => {
           }}
         >
           <Typed
-            strings={["Emojinja⛩"]}
+            strings={["Emojinja⛩️"]}
             typeSpeed={100}
             typedRef={(ref: HTMLElement): void => {
               typed = ref;
