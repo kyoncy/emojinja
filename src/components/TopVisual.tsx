@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import Typed from "react-typed";
 import { Header, Icon } from "semantic-ui-react";
 import Translation from "./Translation";
