@@ -28,12 +28,11 @@ const CardEmoji = ({
   backgroundColor = "#ffffff",
   name = "none",
 }: CardEmojiProps): JSX.Element => {
-  // eslint-disable-next-line no-shadow
-  const notify = (text: string, backgroundColor: string): React.ReactText =>
+  const notify = (text: string, background: string): React.ReactText =>
     toast(`Copy ${text}`, {
       className: css({
         fontWeight: "bold",
-        backgroundColor: `${backgroundColor} !important`,
+        backgroundColor: `${background} !important`,
         color: "rgba(0,0,0,.87) !important",
       }),
       bodyClassName: css({

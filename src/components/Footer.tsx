@@ -15,7 +15,7 @@ const Footer = (): JSX.Element => (
       </a>
       {` `}
       <a
-        href="https://github.com/nagaokyota/emojinja"
+        href="https://github.com/kyoncy/emojinja"
         target="_blank"
         rel="noopener noreferrer"
         style={{ textDecoration: "none" }}
