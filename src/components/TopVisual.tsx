@@ -1,9 +1,13 @@
+/* eslint-disable react/prop-types */
+import { useFlags } from "launchdarkly-react-client-sdk";
 import React from "react";
 import Typed from "react-typed";
 import { Header, Icon } from "semantic-ui-react";
 import Translation from "./Translation";
 
-const TopVisual = (): JSX.Element => {
+const TopVisual: React.FC = () => {
+  const flags = useFlags();
+
   return (
     <div style={{ padding: "20px" }}>
       <Header
@@ -21,8 +25,7 @@ const TopVisual = (): JSX.Element => {
         >
           <Typed strings={["Emojinja⛩️"]} typeSpeed={100} />
         </div>
-        {` `}
-        <Translation />
+        {flags?.disableTranslation && <Translation />}
         <a
           style={{ fontSize: "30px" }}
           rel="noopener noreferrer"
